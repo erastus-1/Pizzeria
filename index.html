@@ -1,54 +1,115 @@
 <!DOCTYPEhtml>
-<html>
+    <html>
+
     <head>
-      <title>Pizza la delicios</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-      <link href="css/styls.css" rel="stylesheet" type="text/css">
-      <link href="css/bootstrap.css/css/bootstrap.css">
-      <script src="java/jquery/jquery-3.5.1.js"></script>
-      <script src="java/scripts.js" type="text/javaScript"></script>
+        <title>Pizza la delicios</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+        <link href="css/styls.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.css/css/bootstrap.css">
+        <script src="java/jquery/jquery-3.5.1.js"></script>
+        <script src="java/scripts.js" type="text/javaScript"></script>
     </head>
-      <body>
-          <div id="jumbotron-fluid">
-              <div class="header">
-                  <img src="images/delivery logo.jpg" alt="delivery image" class="delivery">
-              <h1>It's not pizza it's pinza!!, <br/>Give life a slice, <br/> Your pizza your way. </h1>
-              <small class="small">Build your on artisian pizza in less than 5mins. and get it delivered</small>
-          </div>
-          </div>
-              <div class="head">
-                <h1>Ruiru's Pizza delights</h1>
-                <p>Introducing the Nairobi best italian style made pizzas cooked in a wood oven.... A new affordable, Different, Healthy, Delicious, Funcky way to have your pizza at the comfort of your sit.<br/> We present to you our new and exciting menu, choose from a variety of pizzas and change the way you think of pizza as our pizzas are full of surprises and will tingle your <br/>taste buds from the main meal to the sweet treat of a pocket friendly price.</p>
-              </div>
-              <div class="container">
-                <div class="products1">
-                <h1>Product</h1>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card img1">
-                            <img src="images/toppings.jpeg" alt="images of toppings" class="image-fluid">
-                            <p id="name">Types Of Toppings</p>                  
-                    </div>
-                </div>
-                    </div>
-                    <div class="col-md-4">
+
+    <body>
+        <div id="jumbotron-fluid">
+            <div class="header">
+                <img src="images/delivery logo.jpg" alt="delivery image" class="delivery">
+                <h1>It's not pizza it's pinza!!, <br />Give life a slice, <br /> Your pizza your way. </h1>
+                <small class="small">Build your on artisian pizza in less than 5mins. and get it delivered</small>
+            </div>
+        </div>
+        <div class="head">
+            <h1>Ruiru's Pizza delights</h1>
+            <p>Introducing the Nairobi best italian style made pizzas cooked in a wood oven.... A new affordable,
+                Different, Healthy, Delicious, Funcky way to have your pizza at the comfort of your sit.<br /> We
+                present to you our new and exciting menu, choose from a variety of pizzas and change the way you think
+                of pizza as our pizzas are full of surprises and will tingle your <br />taste buds from the main meal to
+                the sweet treat of a pocket friendly price.</p>
+        </div>
+        <div class="container-fluid">
+            <h1>Product</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card img1">
+                        <img src="images/toppings.jpeg" alt="images of toppings" class="image-fluid">
                         <div class="products1">
-                        <div class="card img2">
-                            <img src="images/pizzaSize2.jpg" alt="images of sizes" class="image-fluid">
-                            <p id="name">Pizza sizes</p>
+                            <p id="name">TYPES OF TOPPINGS</p>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card img2">
+                        <img src="images/pizzaSize2.jpg" alt="images of sizes" class="image-fluid">
+                        <div class="products2">
+                            <p id="name">PIZZA SIZE</p>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="products1">
+                </div>
+                <div class="col-md-4">
                     <div class="card img3">
                         <img src="images/boxSize.jpg" alt="images of pizza cuttings" class="image-fluid">
-                        <p id="name">Box sizes</p>
+                        <div class="products3">
+                            <p id="name">BOX SIZES</p>
+                        </div>
                     </div>
-                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="row">
+
+        <div class="col-md-6">
+          <h2>Add a contact:</h2>
+          <form id="new-contact">
+            <div class="form-group">
+              <label for="new-first-name">First name</label>
+              <input type="text" class="form-control" id="new-first-name">
+            </div>
+            <div class="form-group">
+              <label for="new-last-name">Last name</label>
+              <input type="text" class="form-control" id="new-last-name">
+            </div>
+  
+            <div id="new-addresses">
+              <div class="new-address">
+                <div class="form-group">
+                  <label for="new-street">Street</label>
+                  <input type="text" class="form-control new-street">
+                </div>
+                <div class="form-group">
+                  <label for="new-city">City</label>
+                  <input type="text" class="form-control new-city">
+                </div>
+                <div class="form-group">
+                  <label for="new-county">County</label>
+                  <input type="text" class="form-control new-county">
                 </div>
               </div>
-                </div>
-      </body>
-</html>
+            </div>
+  
+            <span class="btn btn-primary" id="add-address">Another address</span>
+  
+            <button type="submit" class="btn">Add</button>
+          </form>
+  
+          <h2>Contacts:</h2>
+          <ul id="contacts">
+  
+          </ul>
+        </div>
+  
+        <div class="col-md-6">
+          <div id="show-contact">
+            <h2></h2>
+            <p>First name: <span class="first-name"></span></p>
+            <p>Last name: <span class="last-name"></span></p>
+            <p>Addresses:</p>
+            <ul id="addresses">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </body>
+
+    </html>

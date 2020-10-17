@@ -150,10 +150,10 @@ $(document).ready(function () {
     };
   
     // user information and output
-    var userName = "";
+    var customerName = "";
     var totalCost = 0;
     var pizzasOrdered = [];
-    var subCounty = "";
+    var County = "";
     var street = "";
     var contactNumber = "";
 
@@ -238,8 +238,8 @@ $("#checkout-form").submit(function (event) {
   console.log(name);
   console.log(deliveryOption);
 
-  $("#checkout-form").submit(function (e) {
-    e.preventDefault();
+  $("#checkout-form").submit(function (event) {
+    event.preventDefault();
     var name = $("#name").val();
     var deliveryOption = $("#delivery-option").val();
     customerName = name;
@@ -247,22 +247,22 @@ $("#checkout-form").submit(function (event) {
     console.log(deliveryOption);
     $("#name").val("");
     $("#delivery-option").val("");
-    $(".checkout-options").hide();
+    $("#checkout-options").hide();
     if (deliveryOption === "deliver") {
-        $(".street").show();
+        $("#street").show();
         $(".delivery-cost").show();
-        $("#delivery-amount").append(250);
-        totalCost += 250;
+        $("#delivery-amount").append(200);
+        totalCost += 200;
         $("#total-amount").empty();
         $("#total-amount").append(totalCost);
     } else {
         alert(customerName + ": Your total bill is Ksh. " + totalCost + ". Your order will be ready for collection in the next 30mins");
     }
-    $("#delivery-form1").submit(function (e) {
-        e.preventDefault();
+    $("#delivery-form1").submit(function (event) {
+        event.preventDefault();
         var estateEntered = $("#street").val();
         var county = $("#county").val();
-        var numberEntered = $("#number").val();
+        var contactNumberEntered = $("#number").val();
         estate = estateEntered;
         contactNumber = contactNumberEntered;
         $(".street").hide();

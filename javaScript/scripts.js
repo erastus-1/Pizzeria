@@ -219,7 +219,7 @@ $(document).ready(function () {
 
   $("#total-amount").fadeIn();
   $("#checkout").fadeIn();
-  $("#orders-div").fadeIn();
+  $("#orders").fadeIn();
 
   $("#total-amount").empty();
   $("#total-amount").append(totalCost);
@@ -233,20 +233,41 @@ $("#checkout").click(function () {
 $("#checkout-form").submit(function (event) {
   event.preventDefault();
   var name = $("#name").val();
-  var deliveryOption = $("#delivery").val();
+  var deliveryOption = $("#delivery-option").val();
   customerName = name;
   console.log(name);
   console.log(deliveryOption);
 
-  $("#name").val("");
-  $("#delivery").val("");
-  $(".checkout-options").hide();
-  if (deliveryOption === "deliver") {
-      $(".street").show();
-      $(".delivery-cost").show();
-      $("#delivery-amount").append(250);
-      totalCost += 250;
-      $("#total-amount").empty();
-      $("#total-amount").append(totalCost);
+  $("#checkout-form").submit(function (e) {
+    e.preventDefault();
+    var name = $("#name").val();
+    var deliveryOption = $("#delivery-option").val();
+    customerName = name;
+    console.log(name);
+    console.log(deliveryOption);
+    $("#name").val("");
+    $("#delivery-option").val("");
+    $(".checkout-options").hide();
+    if (deliveryOption === "deliver") {
+        $(".street").show();
+        $(".delivery-cost").show();
+        $("#delivery-amount").append(250);
+        totalCost += 250;
+        $("#total-amount").empty();
+        $("#total-amount").append(totalCost);
+    } else {
+        alert(customerName + ": Your total bill is Ksh. " + totalCost + ". Your order will be ready for collection in the next 30mins");
+    }
+    $("#delivery-form1").submit(function (e) {
+        e.preventDefault();
+        var estateEntered = $("#street").val();
+        var county = $("#county").val();
+        var numberEntered = $("#number").val();
+        estate = estateEntered;
+        contactNumber = contactNumberEntered;
+        $(".street").hide();
+        alert(customerName + ": Your total bill is Ksh. " + totalCost + ". Your order will be delivered to " + county + ", " + contactNumber + " in the next 30mins");
     });
-  });
+});
+});
+});

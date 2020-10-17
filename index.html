@@ -93,14 +93,14 @@
                         <button class="btn btn-primary">Order</button>
                     </div>
                 </form>
-                    <form class="form-group" class="form-control" method="post">
+                    <form class="form-group" class="form-control" method="post" id="checkout-form">
                     <div class="col-md-4 form-group">
                         <h4 class="delivery">Delivery Check-Form</h4>
                         <label for="name">Your full name:</label> <br />
                         <input type="text" class="form-control" id="name" required />
                         <br />
                         <label for="delivery">Delivery option:</label> <br />
-                        <select id="delivery" name="delivery" class="form-control" required>
+                        <select id="delivery-option" name="delivery" class="form-control" required>
                             <option value="select">select</option>
                             <option value="collect">Collect</option>
                             <option value="deliver">Deliver</option>
@@ -108,7 +108,7 @@
                             <button class="btn btn-primary">Send</button>
                 </div>
             </form>
-            <form class="form-group" class="form-control" method="post">
+            <form class="form-group" class="form-control" method="post" id="delivery-form">
                     <div class="col-md-4 form-group">
                         <h4 class="address">Delivery Point:</h4>
                         <label for="name">Your county:</label> <br />

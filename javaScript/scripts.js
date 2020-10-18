@@ -196,13 +196,13 @@ $(document).ready(function () {
       "<td>" +
       newPizza.crustWeight +
       " - " +
-      newPizza.getPizzaCrustWeightPrice() +
+      newPizza.getPizzaCrustWeightprice() +
       "</td>" +
       "<td>" +
       newPizza.pizzaSize +
       "</td>" +
       "<td>" +
-      newPizza.getPizzaSizePrice() +
+      newPizza.getPizzaPrice() +
       "</td>" +
       "</tr>"
     );
@@ -260,7 +260,7 @@ $(document).ready(function () {
         street = streetEntered;
         county = countyEntered;
         contactNumber = contactNumberEntered;
-        $("#street").hide();
+        $("#county").hide();
         alert(customerName + ": Your total bill is Ksh. " + totalCost + ". Your order will be delivered to " + street + ", " + contactNumber + " in the next 30mins");
       });
     });

@@ -36,15 +36,82 @@
         </div> 
             </div>
             <div class="card-img2">
-               <img src="images/pizza4.jpg" alt="images of chicken pizza" class="image-fluid">
+               <img src="images/pizza1.jpg" alt="images of chicken pizza" class="image-fluid">
            </div>
            <div class="card-img3">
-            <img src="images/pizza4.jpg" alt="images of chicken pizza" class="image-fluid">
+            <img src="images/pizza2.jpg" alt="images of chicken pizza" class="image-fluid">
         </div>
         <div class="card-img4">
-         <img src="images/pizza4.jpg" alt="images of chicken pizza" class="image-fluid">
+         <img src="images/pizza3.jpg" alt="images of chicken pizza" class="image-fluid">
      </div>
          </div>
      </div>
-     
+     <h1 style="font-size: 29px; color: purple;">Place order here:</h1>
+     <div class="row">
+     <div class="col-md-3">
+       <div class="container">
+            <div class="form-group">
+            <div id="myForm">
+              <h4 class="menu">Build Your Menu:</h4>
+               <form>
+                  <label for="pizzaSize">Choose the size of pizza:</label> <br />
+                  <select id="pizzaSize" name="pizzaSize" class="form-control" required>
+                      <option value="Select">select</option>
+                      <option value="Small">Small</option>
+                      <option value="Regular">Regular</option>
+                      <option value="Large">Large</option>
+                      <option value="Extra-Large">Extra-Large</option>
+                  </select> <br />
+                  <div class="form-group">
+                     <label for="toppings">Choose Topping of your choice:</label> <br />
+                     <select id="pizzaToppings" name="pizzaToppings" class="form-control" required>
+                         <option value="select">select</option>
+                         <option value="Bacon">Bacon</option>
+                         <option value="Cheese">Extra cheese</option>
+                         <option value="Meat">Meat</option>
+                         <option value="Chicken">Chicken</option>
+                     </select> <br />
+                     <div class="form-group">
+                        <select id="crustWeight" name="crustWeight" class="form-control" required>
+                           <option value="select">select</option>
+                           <option value="Thin">Thin</option>
+                           <option value="Thick">Thick</option>
+                           <option value="Double">Double</option>
+                           <option value="Crispy">Crispy</option>
+                       </select> 
+                       <br /> 
+                       <button class="btn btn-primary">Order</button>      
+                  </div>
+            </div>
+         </div>
+          </div>
+          </div>
+          </div>
+     </div>
+     <div class="row">
+      <div class="col-md-3">
+        <div class="container">
+              <form>
+               <h4 class="delivery">Delivery Checkout-Form</h4>
+               <label for="name">Your full name:</label> <br />
+               <input type="text" class="form-control" id="name" required />
+               <br />
+               <label for="delivery">Delivery option:</label>
+               <br />
+               <select id="delivery-option" name="delivery" class="form-control" required>
+                  <br />
+                  <option value="select">select</option>
+                  <option value="collect">Collect</option>
+                  <option value="deliver">Deliver</option>
+                  <br />
+                  <button class="btn btn-primary">Send</button>
+              </div>
+              </div>
+     </div>
+     <div class="row">
+      <div class="col-md-3">
+        <div class="container">
+           <form>
+
+           </form>
     </body>

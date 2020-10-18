@@ -208,7 +208,7 @@ $(document).ready(function () {
       newPizza.pizzaSize +
       "</td>" +
       "<td>" +
-      newPizza.getPizzaPrice() +
+      newPizza.getPizzaSizePrice() +
       "</td>" +
       "</tr>"
     );
@@ -258,15 +258,16 @@ $(document).ready(function () {
       } else {
         alert(customerName + ": Your total bill is Ksh. " + totalCost + ". Your order will be ready for collection in the next 30mins");
       }
-      $("#delivery-form1").submit(function (event) {
+      $("#delivery-form").submit(function (event) {
         event.preventDefault();
-        var estateEntered = $("#street").val();
+        var streetEntered = $("#street").val();
         var county = $("#county").val();
         var contactNumberEntered = $("#number").val();
-        estate = estateEntered;
+        street = streetEntered;
+        county = countyEntered;
         contactNumber = contactNumberEntered;
         $("#street").hide();
-        alert(customerName + ": Your total bill is Ksh. " + totalCost + ". Your order will be delivered to " + county + ", " + contactNumber + " in the next 30mins");
+        alert(customerName + ": Your total bill is Ksh. " + totalCost + ". Your order will be delivered to " + street + ", " + contactNumber + " in the next 30mins");
       });
     });
   });

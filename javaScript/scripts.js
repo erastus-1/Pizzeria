@@ -224,13 +224,13 @@ $(document).ready(function () {
     $(".checkout-options").show();
   });
 
-  $("#checkout-form").submit(function (event) {
-    event.preventDefault();
-    var name = $("#name").val();
-    var deliveryOption = $("#delivery-option").val();
-    customerName = name;
-    console.log(name);
-    console.log(deliveryOption);
+  // $("#checkout-form").submit(function (event) {
+  //   event.preventDefault();
+  //   var name = $("#name").val();
+  //   var deliveryOption = $("#delivery-option").val();
+  //   customerName = name;
+  //   console.log(name);
+  //   console.log(deliveryOption);
 
     $("#checkout-form").submit(function (event) {
       event.preventDefault();
@@ -265,4 +265,3 @@ $(document).ready(function () {
       });
     });
   });
-});

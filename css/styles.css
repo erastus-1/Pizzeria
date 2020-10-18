@@ -1,109 +1,40 @@
-#jumbotron-fluid { 
-                  /* background-image: url(../images/delivery\ logo.jpg); */
-                  /* height: 600px; */
-                  text-align: center;
-                  color: black;
-                  display:cover;
-                 }
-.head {
-        text-align: center;
-        padding-top: 10px;
-        font-size: 50px;
-}
-.pizza {
-         float: left;
-         margin-right: 10px;
-         border-radius: 10px;
-         
-}
-body { 
-       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-       font-style: italic;
-       font-weight: bold;
-}
-.header {
-          text-align: center;
-          font-weight: border;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          font-size: 40px;
-          padding-top: 50px;
-}
-.small {
-         font-weight: lighter;
-         font-style: italic;
-         font-size: 20px;
-         color: black;
-}
-.delivery {
-            float: right;
-            height: 350px;
-            background: transparent;
-            padding-right: 30px;
-            font-weight: lighter;
-
-} 
-.pizzaBox {
-            float: left;
-            height: 700px;
-            border-radius: 10px;
-            margin-right: 10px;
-}
-.products{
-        padding-top: 20px;
-        padding-bottom: 30px;
-        padding-left: 9%;
-        padding-right: 9%;
+/* @media screen and(width: 450px){
+        body {
+               background-color: black;
+               color: cornsilk;
+        }
+ }
+ @media screen and(width: 720px){
+        body {
+               background-color: linen;
+               font-family: Arial, Helvetica, sans-serif;
+               color: black;
+             }
+         h1 { 
+              font-weight: bolder;
+              color: mediumaquamarine;
+            
+         }
+ }
+ body {
+        font-family: sans-serif;
       }
-#form {
-        text-align: center;
-        font-size: 50px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-/* .form-control {
-                 background-color: black;
-                 color: burlywood;
-                 padding-left: 20px;
-                 color: white;
-} */
-.menu {
-        font-weight: lighter;
-        font-size: 20px;
-        font-style: italic;
-}
-.image-fluid {
-        max-width: 100%;
-        height: 300px;
-        width: 300px;
-        margin: 5px;
-        background-color: transparent;
-}
-.products {
-            font-weight: bolder;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-style: italic;
-            font-size: 40px;
-}                 
-#myform {
-          text-align: center;
-          font-style: italic;
-
-}
-.footer {
-          text-align: center;
-          background-color: dimgrey;
-          padding-top: 20px;
-}
-/* #order {
-         padding-left: 20px;
-         margin-left: 30px;
-} */
-
-.table {
-         padding: 30px;
-         margin: 30px;
-
-}
-#container-fluid {
-                   background-color: burlywood;
-                   padding: 20px;
-}
+  h1 {
+       color: maroon;
+       font-style: italic;
+       font-family: serif;
+     }
+ .table {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          
+        }
+ .alert-success {
+                  background-color: lightgray;
+                  color: blue;
+                  border: none;  
+                  font-style: italic;                 
+                 }
+ .lead {
+         font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+ }                 */

@@ -227,7 +227,7 @@ $(document).ready(function () {
         "</tr>"
     );
     if (pizzasOrdered.length > 0) {
-      $(".form-control").empty();
+      $(".form-control").append();
       $(".form-control").append("Add Another Order");
     }
 
@@ -285,8 +285,8 @@ $(document).ready(function () {
       street = streetEntered;
       county = countyEntered;
       contactNumber = contactNumberEntered;
-      // $("#county").hide();
-    
+     
+      
       alert(
         customerName +
           ": Your total bill is Ksh. " +

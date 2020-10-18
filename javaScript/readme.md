@@ -27,7 +27,7 @@ Markdown
 i) Git if you are using windows. ii) Download a code editor e.g Vs code, Atom e.t.c.
 
 Setup
-Open https://github.com/Susan-Kathoni/Your-favorite-pizza-delights in your web browser.
+Open https://github.com/erastus-1/Pizzeria in your web browser.
 
 Copy the repository's url. -If you are using linux, go to the terminal and navigate the folder in which you would like to clone the repository. You shall then $ git clone (paste url). Press Enter. You can now work on the repository using your preferred code editor.
 

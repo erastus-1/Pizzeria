@@ -1,7 +1,7 @@
 $(document).ready(function () {
   function Pizza(pizzaSize, pizzaType, pizzaToppings, crustWeight) {
     this.pizzaSize = pizzaSize;
-    this.pizzaTopping = pizzaToppings;
+    this.pizzaToppings = pizzaToppings;
     this.pizzaType = pizzaType;
     this.crustWeight = crustWeight;
   }
@@ -156,13 +156,13 @@ $(document).ready(function () {
     console.log("click", $("#pizzaType").val())
     var pizzaTypeSelected = $("#pizzaType").val();
     var pizzaSizeSelected = $("#pizzaSize").val();
-    var pizzaToppingSelected = $("#pizzaToppings").val();
+    var pizzaToppingsSelected = $("#pizzaToppings").val();
     var crustWeightSelected = $("#crustWeight").val();
 
     var newPizza = new Pizza(
       pizzaTypeSelected,
       pizzaSizeSelected,
-      pizzaToppingSelected,
+      pizzaToppingsSelected,
       crustWeightSelected
     );
     pizzasOrdered.push(newPizza);
@@ -178,8 +178,8 @@ $(document).ready(function () {
       totalCost += pizzasOrdered[i].getPizzaPrice();
     }
     console.log(newPizza)
-    console.log(newPizza.pizzaType)
-    console.log(newPizza.getPizzaTypePrice())
+    console.log(newPizza.pizzaPrice)
+    console.log(newPizza.getPizzaPrice())
 
     $("#bill-summary").append(
       "<tr>" +
@@ -191,7 +191,7 @@ $(document).ready(function () {
       "<td>" +
       newPizza.pizzaToppings +
       " - " +
-      newPizza.getpizzaToppingPrice() +
+      newPizza.getpizzaToppingsPrice() +
       "</td>" +
       "<td>" +
       newPizza.crustWeight +
@@ -220,7 +220,7 @@ $(document).ready(function () {
     $(".total-amount").show();
   });
 
-  $("#checkout").click(function () {
+  $("#checkout-form").click(function () {
     $(".checkout-options").show();
   });
 
@@ -255,7 +255,7 @@ $(document).ready(function () {
       $("#delivery-form").submit(function (event) {
         event.preventDefault();
         var streetEntered = $("#street").val();
-        var county = $("#county").val();
+        var countyEntered = $("#county").val();
         var contactNumberEntered = $("#number").val();
         street = streetEntered;
         county = countyEntered;

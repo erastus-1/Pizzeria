@@ -178,25 +178,25 @@ $(document).ready(function () {
       totalCost += pizzasOrdered[i].getPizzaPrice();
     }
     console.log(newPizza)
-    console.log(newPizza.pizzaPrice)
-    console.log(newPizza.getPizzaPrice())
+    console.log(newPizza.pizzaTypePrice)
+    console.log(newPizza.getPizzaTypePrice())
 
     $("#bill-summary").append(
       "<tr>" +
       '<th scope="row">' +
       newPizza.pizzaType +
       " -" +
-      newPizza.getpizzaTypePrice() +
+      newPizza.getPizzaTypePrice() +
       "</th>" +
       "<td>" +
       newPizza.pizzaToppings +
       " - " +
-      newPizza.getpizzaToppingsPrice() +
+      newPizza.getPizzaToppingsPrice() +
       "</td>" +
       "<td>" +
       newPizza.crustWeight +
       " - " +
-      newPizza.getCrustWeightPrice() +
+      newPizza.getPizzaCrustWeightPrice() +
       "</td>" +
       "<td>" +
       newPizza.pizzaSize +

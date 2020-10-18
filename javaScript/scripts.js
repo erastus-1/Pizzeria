@@ -101,7 +101,6 @@ $(document).ready(function () {
   };
   Pizza.prototype.getPizzaCrustWeightprice = function () {
     if (this.pizzaSize === "regular") {
-      if (this.pizzaSize === "Extra.Large") {
         if (this.crustWeight === Thin) {
           return 50;
         } else if (this.crustWeight === Thick) {
@@ -111,9 +110,7 @@ $(document).ready(function () {
         } else if (this.crustWeight === Crispy) {
           return 100;
         }
-      }
-    } else if (this.pizzaSize === "medium") {
-      if (this.pizzaSize === "Extra.Large") {
+      }else if (this.pizzaSize === "medium") {
         if (this.crustWeight === Thin) {
           return 50;
         } else if (this.crustWeight === Thick) {
@@ -123,18 +120,15 @@ $(document).ready(function () {
         } else if (this.crustWeight === Crispy) {
           return 100;
         }
-      }
-    } else if (this.pizzaSize === "large") {
-      if (this.pizzaSize === "Extra.Large") {
-        if (this.crustWeight === Thin) {
-          return 50;
-        } else if (this.crustWeight === Thick) {
-          return 100;
-        } else if (this.crustWeight === Double) {
-          return 150;
-        } else if (this.crustWeight === Crispy) {
-          return 100;
-        }
+      }else if (this.pizzaSize === "large") {
+      if (this.crustWeight === Thin) {
+        return 50;
+      } else if (this.crustWeight === Thick) {
+        return 100;
+      } else if (this.crustWeight === Double) {
+        return 150;
+      } else if (this.crustWeight === Crispy) {
+        return 100;
       }
     } else if (this.pizzaSize === "Extra.Large") {
       if (this.crustWeight === Thin) {

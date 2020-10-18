@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  function Pizza(pizzaSize, pizzaType, pizzaToppings) {
+  function Pizza(pizzaSize, pizzaType, pizzaToppings, crustWeight) {
     this.pizzaSize = pizzaSize;
     this.pizzaTopping = pizzaToppings;
     this.pizzaType = pizzaType;
@@ -17,11 +17,11 @@ $(document).ready(function () {
     if (this.pizzaSize === "regular") {
       if (this.pizzaType === Bbq) {
         return 350;
-      } else if (this.pizzaType === chicken) {
+      } else if (this.pizzaType === Chicken) {
         return 500;
-      } else if (this.pizzaType === veggie) {
+      } else if (this.pizzaType === Veggie) {
         return 300;
-      } else if (this.pizzaType === hawaiian) {
+      } else if (this.pizzaType === Hawaiian) {
         return 500;
       }
     } else if (this.pizzaSize === "medium") {
@@ -151,7 +151,7 @@ $(document).ready(function () {
   var street = "";
   var contactNumber = "";
 
-  $("#order-form").submit(function (event) {
+  $("#myForm").submit(function (event) {
     event.preventDefault();
     console.log("click", $("#pizzaType").val())
     var pizzaTypeSelected = $("#pizzaType").val();

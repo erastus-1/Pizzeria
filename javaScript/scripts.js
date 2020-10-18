@@ -14,7 +14,7 @@ $(document).ready(function () {
   };
 
   Pizza.prototype.getPizzaTypePrice = function () {
-    if (this.pizzaSize === "regular") {
+    if (this.pizzaSize === "Regular") {
       if (this.pizzaType === Bbq) {
         return 350;
       } else if (this.pizzaType === Chicken) {
@@ -24,7 +24,7 @@ $(document).ready(function () {
       } else if (this.pizzaType === Hawaiian) {
         return 500;
       }
-    } else if (this.pizzaSize === "medium") {
+    } else if (this.pizzaSize === "Medium") {
       if (this.pizzaType === Bbq) {
         return 500;
       } else if (this.pizzaType === Chicken) {
@@ -34,7 +34,7 @@ $(document).ready(function () {
       } else if (this.pizzaType === Hawaiian) {
         return 650;
       }
-    } else if (this.pizzaSize === "large") {
+    } else if (this.pizzaSize === "Large") {
       if (this.pizzaType === Bbq) {
         return 700;
       } else if (this.pizzaType === Chicken) {
@@ -57,7 +57,7 @@ $(document).ready(function () {
     }
   };
   Pizza.prototype.getPizzaToppingsPrice = function () {
-    if (this.pizzaSize === "regular") {
+    if (this.pizzaSize === "Regular") {
       if (this.pizzaToppings === Bacon) {
         return 35;
       } else if (this.pizzaToppings === chicken) {
@@ -67,7 +67,7 @@ $(document).ready(function () {
       } else if (this.pizzaToppings === Meat) {
         return 50;
       }
-    } else if (this.pizzaSize === "medium") {
+    } else if (this.pizzaSize === "Medium") {
       if (tthis.pizzaToppings === Bacon) {
         return 50;
       } else if (this.pizzaToppings === Chicken) {
@@ -77,7 +77,7 @@ $(document).ready(function () {
       } else if (this.pizzaToppings === Meat) {
         return 65;
       }
-    } else if (this.pizzaSize === "large") {
+    } else if (this.pizzaSize === "Large") {
       if (this.pizzaToppings === Bacon) {
         return 100;
       } else if (this.pizzaToppings === Chicken) {
@@ -100,7 +100,7 @@ $(document).ready(function () {
     }
   };
   Pizza.prototype.getPizzaCrustWeightprice = function () {
-    if (this.pizzaSize === "regular") {
+    if (this.pizzaSize === "Regular") {
         if (this.crustWeight === Thin) {
           return 50;
         } else if (this.crustWeight === Thick) {
@@ -110,7 +110,7 @@ $(document).ready(function () {
         } else if (this.crustWeight === Crispy) {
           return 100;
         }
-      }else if (this.pizzaSize === "medium") {
+      }else if (this.pizzaSize === "Medium") {
         if (this.crustWeight === Thin) {
           return 50;
         } else if (this.crustWeight === Thick) {
@@ -120,7 +120,7 @@ $(document).ready(function () {
         } else if (this.crustWeight === Crispy) {
           return 100;
         }
-      }else if (this.pizzaSize === "large") {
+      }else if (this.pizzaSize === "Large") {
       if (this.crustWeight === Thin) {
         return 50;
       } else if (this.crustWeight === Thick) {
@@ -178,8 +178,8 @@ $(document).ready(function () {
       totalCost += pizzasOrdered[i].getPizzaPrice();
     }
     console.log(newPizza)
-    console.log(newPizza.pizzaTypePrice)
-    console.log(newPizza.getPizzaTypePrice())
+    console.log(newPizza.pizzaPrice)
+    console.log(newPizza.getPizzaPrice())
 
     $("#bill-summary").append(
       "<tr>" +

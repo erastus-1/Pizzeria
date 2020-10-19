@@ -31,6 +31,18 @@ $(document).ready(function () {
       } else {
         return 100;
       }
+    } else if (this.pizzaSize === "Small") {
+      if (this.pizzaType === "Bbq") {
+        return 700;
+      } else if (this.pizzaType === "Chicken") {
+        return 850;
+      } else if (this.pizzaType === "Veggie") {
+        return 650;
+      } else if (this.pizzaType === "Hawaiian") {
+        return 560;
+      } else {
+        return 160;
+      }
     } else if (this.pizzaSize === "Medium") {
       if (this.pizzaType === "Bbq") {
         return 500;
@@ -82,6 +94,18 @@ $(document).ready(function () {
       } else if (this.pizzaToppings === "Meat") {
         return 50;
       }
+    } else if (this.pizzaSize === "small") {
+      if (this.pizzaToppings === "Bacon") {
+        return 500;
+      } else if (this.pizzaToppings === "Chicken") {
+        return 650;
+      } else if (this.pizzaToppings === "Veggie") {
+        return 550;
+      } else if (this.pizzaToppings === "Hawaiian") {
+        return 650;
+      } else {
+        return 100;
+      }
     } else if (this.pizzaSize === "Medium") {
       if (tthis.pizzaToppings === "Bacon") {
         return 50;
@@ -123,6 +147,18 @@ $(document).ready(function () {
       } else if (this.crustWeight === "Double") {
         return 150;
       } else if (this.crustWeight === "Crispy") {
+        return 100;
+      }
+    } else if (this.pizzaSize === "small") {
+      if (this.crustWeight === "Bbq") {
+        return 500;
+      } else if (this.crustWeight === "Chicken") {
+        return 650;
+      } else if (this.crustWeight === "Veggie") {
+        return 550;
+      } else if (this.crustWeight === "Hawaiian") {
+        return 650;
+      } else {
         return 100;
       }
     } else if (this.pizzaSize === "Medium") {
@@ -269,7 +305,7 @@ $(document).ready(function () {
       totalCost += 200;
       $("#total-amount").empty();
       $("#total-amount").append(totalCost);
-    } else {
+    } else { 
       alert(
         customerName +
           ": Your total bill is Ksh. " +

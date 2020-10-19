@@ -244,13 +244,13 @@ $(document).ready(function () {
     $(".checkout-options").show();
   });
 
-  // $("#checkout-form").submit(function (event) {
-  //   event.preventDefault();
-  //   var name = $("#name").val();
-  //   var deliveryOption = $("#delivery-option").val();
-  //   customerName = name;
-  //   console.log(name);
-  //   console.log(deliveryOption);
+  $("#checkout-form").submit(function (event) {
+    event.preventDefault();
+    var name = $("#name").val();
+    var deliveryOption = $("#delivery-option").val();
+    customerName = name;
+    console.log(name);
+    console.log(deliveryOption);
 
   $("#checkout-form").submit(function (event) {
     event.preventDefault();
@@ -274,7 +274,7 @@ $(document).ready(function () {
         customerName +
           ": Your total bill is Ksh. " +
           totalCost +
-          ". Your order will be ready for collection in the next 30mins"
+          ". Your order will be ready for your collection in the next 30mins"
       );
     }
     $("#delivery-form").submit(function (event) {
@@ -297,5 +297,6 @@ $(document).ready(function () {
           " in the next 30mins"
       );
     });
+  });
   });
 });

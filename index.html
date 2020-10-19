@@ -56,81 +56,77 @@
       </div>
       <h2>Place Your Order Here:</h2>
       <div class="form">
-      <!-- <div id="container-fluid"> -->
          <div id="row">
             <div class="col-md-6">
                <h4 class="menu">Build Your Menu:</h4>
                <form id="myForm">
                   <div class="form-group">
-                  <label for="pizzaType">Choose your pizza type:</label> </br>
-                  <select id="pizzaType" name="pizzatype" class="form-control" required>
-                     <option value="select">select</option>
-                     <option value="Bbq">Bbq</option>
-                     <option value="Chicken">Chicken</option>
-                     <option value="Hawaian">Hawaian</option>
-                     <option value="Veggie">veggie</option>
-                  </select> 
-               </div>
+                     <label for="pizzaType">Choose your pizza type:</label> </br>
+                     <select id="pizzaType" name="pizzatype" class="form-control" required>
+                        <option value="select">select</option>
+                        <option value="Bbq">Bbq</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Hawaian">Hawaian</option>
+                        <option value="Veggie">veggie</option>
+                     </select>
+                  </div>
                   <div class="form-group">
-                  <label for="pizzaSize">Choose the size of pizza:</label> <br />
-                  <select id="pizzaSize" name="pizzaSize" class="form-control" required>
-                     <option value="Select">select</option>
-                     <option value="Small">Small</option>
-                     <option value="Regular">Regular</option>
-                     <option value="Large">Large</option>
-                     <option value="Extra-Large">Extra-Large</option>
-                  </select>
-               </div>
-               <div class="form-group">
-                  <label for="toppings">Choose Topping of your choice:</label> <br />
-                  <select id="pizzaToppings" name="pizzaToppings" class="form-control" required>
-                     <option value="select">select</option>
-                     <option value="Bacon">Bacon</option>
-                     <option value="Cheese">Extra cheese</option>
-                     <option value="Meat">Meat</option>
-                     <option value="Chicken">Chicken</option>
-                  </select> 
-               </div>
+                     <label for="pizzaSize">Choose the size of pizza:</label> <br />
+                     <select id="pizzaSize" name="pizzaSize" class="form-control" required>
+                        <option value="Select">select</option>
+                        <option value="Small">Small</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Large">Large</option>
+                        <option value="Extra-Large">Extra-Large</option>
+                     </select>
+                  </div>
                   <div class="form-group">
-                  <label for="crust">Choose Crust Weight:</label> <br />
-                  <select id="crustWeight" name="crustWeight" class="form-control" required>
-                     <option value="select">select</option>
-                     <option value="Thin">Thin</option>
-                     <option value="Thick">Thick</option>
-                     <option value="Double">Double</option>
-                     <option value="Crispy">Crispy</option>
-                  </select> 
-               </div>
+                     <label for="toppings">Choose Topping of your choice:</label> <br />
+                     <select id="pizzaToppings" name="pizzaToppings" class="form-control" required>
+                        <option value="select">select</option>
+                        <option value="Bacon">Bacon</option>
+                        <option value="Cheese">Extra cheese</option>
+                        <option value="Meat">Meat</option>
+                        <option value="Chicken">Chicken</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label for="crust">Choose Crust Weight:</label> <br />
+                     <select id="crustWeight" name="crustWeight" class="form-control" required>
+                        <option value="select">select</option>
+                        <option value="Thin">Thin</option>
+                        <option value="Thick">Thick</option>
+                        <option value="Double">Double</option>
+                        <option value="Crispy">Crispy</option>
+                     </select>
+                  </div>
                   <button class="btn btn-primary">Order</button>
                </form>
-               </div>
-         <div class="col-md-2 checkout-options hidden">
-            <!-- <div classs="row"> -->
+            </div>
+            <div class="col-md-2 checkout-options hidden">
                <form id="checkout-form">
                   <h4 class="delivery">Delivery Checkout-Form</h4>
                   <div class="form-group">
-                  <label for="name">Your full name:</label> <br />
-                  <input type="text" class="form-control" id="name" required />
-               </div>
-               <div class="form-group">
-                  <label for="delivery">Delivery option:</label>
-                  <br />
-                  <select id="delivery-option" name="delivery" class="form-control" required>
+                     <label for="name">Your full name:</label> <br />
+                     <input type="text" class="form-control" id="name" required />
+                  </div>
+                  <div class="form-group">
+                     <label for="delivery">Delivery option:</label>
                      <br />
-                     <option value="select">select</option>
-                     <option value="collect">Collect</option>
-                     <option value="deliver">Deliver</option>
+                     <select id="delivery-option" name="delivery" class="form-control" required>
+                        <br />
+                        <option value="select">select</option>
+                        <option value="collect">Collect</option>
+                        <option value="deliver">Deliver</option>
                   </div>
-                     <button class="btn btn-primary">Send</button>
-                  </form>
-                  </div>
-               </div>
-         <!-- </div> -->
-         <!-- <div classs="row"> -->
+                  <button class="btn btn-primary">Send</button>
+               </form>
+            </div>
+         </div>
          <div class="col-md-4">
             <h4 class="address">Delivery Point:</h4>
-               <form class="form-group" id="form-control" id="delivery-form">
-                  <div class="form-group">
+            <form class="form-group" id="form-control" id="delivery-form">
+               <div class="form-group">
                   <label for="name">Your county:</label> <br />
                   <input type="text" class="form-control" id="county" required />
                </div>
@@ -142,13 +138,11 @@
                   <label for="name">Your Mobile Number:</label> <br />
                   <input type="number" class="form-control" id="number" required />
                </div>
-                  <button class="btn btn-primary">Submit</button>
+               <button class="btn btn-primary">Submit</button>
             </form>
-               <!-- </div> -->
          </div>
       </div>
-      <!-- </div> -->
-         <div class="col-md-8 hidden" id="orders">
+      <div class="col-md-8 hidden" id="orders">
          <h3 id="header">Your Pizza placed order(s)</h3>
          <table class="table" class="navbar-nav">
             <thead>
@@ -161,25 +155,25 @@
                </tr>
             </thead>
             <tbody id="bill-summary"></tbody>
-         </div>
-         </table>
-         <p class="delivery-cost hidden">
-            Delivery cost: Ksh. <span id="delivery-amount"></span>
-         </p>
-         <p class="total-amount hidden">
-            Total bill: Ksh. <span id="total-amount"></span>
-         </p>
-         <br /><br />
-         <div id="footer">
-            <img src="images/social/behance.png">
-            <img src="images/social/facebook.png">
-            <img src="images/social/flickr.png">
-            <img src="images/social/pinterest.png">
-            <img src="images/social/stumble_upon.png">
-            <img src="images/social/twitter.png">
-            <img src="images/social/you_tube.png">
-            <p>Ruirus pizza delights <br />2020</p>
-         </div>
+      </div>
+      </table>
+      <p class="delivery-cost hidden">
+         Delivery cost: Ksh. <span id="delivery-amount"></span>
+      </p>
+      <p class="total-amount hidden">
+         Total bill: Ksh. <span id="total-amount"></span>
+      </p>
+      <br /><br />
+      <div id="footer">
+         <img src="images/social/behance.png">
+         <img src="images/social/facebook.png">
+         <img src="images/social/flickr.png">
+         <img src="images/social/pinterest.png">
+         <img src="images/social/stumble_upon.png">
+         <img src="images/social/twitter.png">
+         <img src="images/social/you_tube.png">
+         <p>Ruirus pizza delights <br />2020</p>
+      </div>
    </body>
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

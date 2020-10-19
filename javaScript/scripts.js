@@ -231,9 +231,9 @@ $(document).ready(function () {
       $("#form-control").append("Add Another Order");
     }
 
-    $("#total-amount").fadeIn();
-    $("#checkout").fadeIn();
-    $("#orders").fadeIn();
+    // $("#total-amount").fadeIn();
+    // $("#checkout").fadeIn();
+    // $("#orders").fadeIn();
 
     $("#total-amount").empty();
     $("#total-amount").append(totalCost);

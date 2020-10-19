@@ -15,7 +15,7 @@
    <body>
       <div id="jumbotron-fluid">
          <div class="header">
-            <img src="images/delivery4.png" alt="delivery image" class="delivery">
+            <img src="images/delivery4.png" alt="delivery image" id="logo">
             <h1>It's not pizza it's pinza!!, <br />Give life a slice, <br /> Your pizza your way. </h1>
             <small class="small">Build your own artisian pizza in less than 5mins. and get it delivered</small>
          </div>
@@ -54,13 +54,13 @@
             </div>
          </div>
       </div>
-      <h2 class="head">Place Your Order Here:</h2>
+      <h2>Place Your Order Here:</h2>
       <div id="container-fluid">
-         <form class="form-control" class="form-group" id="myForm">
-            <div id="row">
-               <div class="col-sm-4">
-                  <h4 class="menu">Build Your Menu:</h4>
-                  <label for="pizzaType">Choose your pizza:</label> </br>
+         <div id="row">
+            <div class="col-md-6">
+               <h4 class="menu">Build Your Menu:</h4>
+               <form class="form-control" class="form-group" id="myForm">
+                  <label for="pizzaType">Choose your pizza type:</label> </br>
                   <select id="pizzaType" name="pizzatype" class="form-control" required>
                      <option value="select">select</option>
                      <option value="Bbq">Bbq</option>
@@ -93,49 +93,48 @@
                      <option value="Crispy">Crispy</option>
                   </select> <br />
                   <button class="btn btn-primary">Order</button>
+               </form>
                </div>
-               </div>
-         </form>
-         <form class="form-group" class="form-control" id="checkout-form">
-            <div classs="row">
-            <div class="col-sm-4 checkout-options hidden">
-               <h4 class="delivery">Delivery Checkout-Form</h4>
-               <label for="name">Your full name:</label> <br />
-               <input type="text" class="form-control" id="name" required />
-               <br />
-               <label for="delivery">Delivery option:</label>
-               <br />
-               <select id="delivery-option" name="delivery" class="form-control" required>
-                  <br />
-                  <option value="select">select</option>
-                  <option value="collect">Collect</option>
-                  <option value="deliver">Deliver</option>
-                  <br />
-                  <button class="btn btn-primary">Send</button>
-                  </div>
-            </div>
-         </form>
-         <form class="form-group" id="form-control" method="post" id="delivery-form">
-            <div classs="row">
-            <div class="col-sm-4">
-               <h4 class="address">Delivery Point:</h4>
-               <label for="name">Your county:</label> <br />
-               <input type="text" class="form-control" id="county" required />
-               <br />
-               <label for="name">Your Street:</label> <br />
-               <input type="text" class="form-control" id="street" required />
-               <br />
-               <label for="name">Your Mobile Number:</label> <br />
-               <input type="number" class="form-control" id="number" required />
-               <br />
-               <button class="btn btn-primary">Submit</button>
-            </div>
-            </div>
-         </form>
          </div>
-      <div class="col-md-8 hidden" id="orders">
+         <div class="col-sm-4 checkout-options hidden">
+            <div classs="row">
+               <form class="form-group" class="form-control" id="checkout-form">
+                  <h4 class="delivery">Delivery Checkout-Form</h4>
+                  <label for="name">Your full name:</label> <br />
+                  <input type="text" class="form-control" id="name" required />
+                  <br />
+                  <label for="delivery">Delivery option:</label>
+                  <br />
+                  <select id="delivery-option" name="delivery" class="form-control" required>
+                     <br />
+                     <option value="select">select</option>
+                     <option value="collect">Collect</option>
+                     <option value="deliver">Deliver</option>
+                     <br />
+                     <button class="btn btn-primary">Send</button>
+                  </form>
+                  </div>
+         </div>
+         <div classs="row">
+         <div class="col-md-6">
+               <form class="form-group" id="form-control" id="delivery-form">
+                  <h4 class="address">Delivery Point:</h4>
+                  <label for="name">Your county:</label> <br />
+                  <input type="text" class="form-control" id="county" required />
+                  <br />
+                  <label for="name">Your Street:</label> <br />
+                  <input type="text" class="form-control" id="street" required />
+                  <br />
+                  <label for="name">Your Mobile Number:</label> <br />
+                  <input type="number" class="form-control" id="number" required />
+                  <br />
+                  <button class="btn btn-primary">Submit</button>
+            </form>
+               </div>
+         </div>
+         <div class="col-md-8 hidden" id="orders">
          <h3 id="header">Your Pizza placed order(s)</h3>
-         <table class="table">
+         <table class="table" class="navbar-nav">
             <thead>
                <tr>
                   <th scope="col">pizzaSize</th>
@@ -146,6 +145,7 @@
                </tr>
             </thead>
             <tbody id="bill-summary"></tbody>
+         </div>
          </table>
          <p class="delivery-cost hidden">
             Delivery cost: Ksh. <span id="delivery-amount"></span>

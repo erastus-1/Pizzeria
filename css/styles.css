@@ -34,7 +34,7 @@
     font-size: 20px;
     color: black;
     }
-    .delivery {
+    #logo {
     float: right;
     height: 350px;
     background: transparent;
@@ -47,12 +47,6 @@
     height: 700px;
     border-radius: 10px;
     margin-right: 10px;
-    }
-    .products{
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 9%;
-    padding-right: 9%;
     }
     /* #form {
     text-align: center;
@@ -103,6 +97,9 @@
     }
     #header {
               margin-top: 20px;
+    }
+    .form-group {
+                  overflow: hidden;
     }
 
     

@@ -1,120 +1,201 @@
 <!DOCTYPEhtml>
-<html>
+   <html>
 
-<head>
-    <title>Pizza la delicios</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="javaScript/scripts.js" rel="script/js"></script>
-    </head>
-    <body>
-      <div id="jumbotron-fluid">
-         <div class="header">
-             <img src="images/delivery4.png" alt="delivery image" class="delivery">
-             <h1>It's not pizza it's pinza!!, <br />Give life a slice, <br /> Your pizza your way. </h1>
-             <small class="small">Build your own artisian pizza in less than 5mins. and get it delivered</small>
-         </div>
-     </div>
-     <div class="head">
-         <h3>Ruiru's Pizza delights</h3>
-         <img src="images/delivery6.webp" alt="delivery image" class="pizzaBox">
-         <p>Introducing Nairobi's best italian style made pizzas cooked in a wood oven.... A new affordable,
-             Different, Healthy, Delicious, Funcky way to have your pizza at the comfort of your sit.<br /> We
-             present to you our new and exciting menu, choose from a variety of pizzas and change the way you think
-             of pizza as our pizzas are full of surprises and will tingle your <br />taste buds from the main meal to
-             the sweet treat of a pocket friendly price.</p>
-     </div>
-     <div class="container-fluid">
-      <div class="row"> 
-      <div class="col-md-3"> 
-         <div class="card-img1">
-            <img src="images/pizza4.jpg" alt="images of chicken pizza" class="image-fluid">
-        </div> 
-            </div>
-            <div class="card-img2">
-               <img src="images/pizza1.jpg" alt="images of chicken pizza" class="image-fluid">
-           </div>
-           <div class="card-img3">
-            <img src="images/pizza2.jpg" alt="images of chicken pizza" class="image-fluid">
-        </div>
-        <div class="card-img4">
-         <img src="images/pizza3.jpeg" alt="images of chicken pizza" class="image-fluid">
-     </div>
-         </div>
-     </div>
-     <h1 style="font-size: 29px; color: purple;">Place order here:</h1>
-     <div class="row">
-     <div class="col-md-3">
-       <div class="container">
-            <div class="form-group">
-            <div id="myForm">
-              <h4 class="menu">Build Your Menu:</h4>
-               <form>
-                  <label for="pizzaSize">Choose the size of pizza:</label> <br />
-                  <select id="pizzaSize" name="pizzaSize" class="form-control" required>
-                      <option value="Select">select</option>
-                      <option value="Small">Small</option>
-                      <option value="Regular">Regular</option>
-                      <option value="Large">Large</option>
-                      <option value="Extra-Large">Extra-Large</option>
-                  </select> <br />
-                  <div class="form-group">
-                     <label for="toppings">Choose Topping of your choice:</label> <br />
-                     <select id="pizzaToppings" name="pizzaToppings" class="form-control" required>
-                         <option value="select">select</option>
-                         <option value="Bacon">Bacon</option>
-                         <option value="Cheese">Extra cheese</option>
-                         <option value="Meat">Meat</option>
-                         <option value="Chicken">Chicken</option>
-                     </select> <br />
-                     <div class="form-group">
-                        <label for="crust">Choose Crust Weight:</label> <br />
-                        <select id="crustWeight" name="crustWeight" class="form-control" required>
-                           <option value="select">select</option>
-                           <option value="Thin">Thin</option>
-                           <option value="Thick">Thick</option>
-                           <option value="Double">Double</option>
-                           <option value="Crispy">Crispy</option>
-                       </select> 
-                       <br /> 
-                       <button class="btn btn-primary">Order</button>      
-                  </div>
-                  <div class="form-group">
+   <head>
+      <title>Pizza la delicios</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+         crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+         crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+         crossorigin="anonymous"></script>
+      <script src="javaScript/scripts.js" rel="script/js"></script>
+   </head>
 
-                  </div>
+   <body>
+
+      <body>
+         <div id="jumbotron-fluid">
+            <div class="header">
+               <img src="images/delivery4.png" alt="delivery image" class="delivery">
+               <h1>It's not pizza it's pinza!!, <br />Give life a slice, <br /> Your pizza your way. </h1>
+               <small class="small">Build your own artisian pizza in less than 5mins. and get it delivered</small>
             </div>
-          </div>
-          </div>
-          </div>
-     </div>
-     <div class="row">
-      <div class="col-md-3">
-        <div class="container">
-              <form>
-               <h4 class="delivery">Delivery Checkout-Form</h4>
-               <label for="name">Your full name:</label> <br />
-               <input type="text" class="form-control" id="name" required />
-               <br />
-               <label for="delivery">Delivery option:</label>
-               <br />
-               <select id="delivery-option" name="delivery" class="form-control" required>
-                  <br />
-                  <option value="select">select</option>
-                  <option value="collect">Collect</option>
-                  <option value="deliver">Deliver</option>
-                  <br />
-                  <button class="btn btn-primary">Send</button>
-              </div>
-              </div>
-     </div>
-     <div class="row">
-      <div class="col-md-3">
-        <div class="container">
-           <form>
-           </div>
-           </form>
+         </div>
+         <div class="head">
+            <h3>Ruiru's Pizza delights</h3>
+            <img src="images/delivery6.webp" alt="delivery image" class="pizzaBox">
+            <p>Introducing Nairobi's best italian style made pizzas cooked in a wood oven.... A new affordable,
+               Different, Healthy, Delicious, Funcky way to have your pizza at the comfort of your sit.<br /> We
+               present to you our new and exciting menu, choose from a variety of pizzas and change the way you think
+               of pizza as our pizzas are full of surprises and will tingle your <br />taste buds from the main meal to
+               the sweet treat of a pocket friendly price.</p>
+         </div>
+         <div class="container-fluid">
+            <h2 class="products">Products:</h2>
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="card-img1">
+                     <img src="images/pizza4.jpg" alt="images of chicken pizza" class="image-fluid">
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="card-img2">
+                     <img src="images/pizza1.jpg" alt="images of bbq pizza" class="image-fluid">
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="card-img3">
+                     <img src="images/pizza2.jpg" alt="images of veggie pizza" class="image-fluid">
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="card-img4">
+                     <img src="images/pizza3.jpeg" alt="images of meat pizza" class="image-fluid">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <h2 class="head">Place Your Oder Here:</h2>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="row">
+                  <div id="container">
+                     <form class="form-control">
+                        <div id="myForm">
+                           <div class="form-group">
+                              <h4 class="menu">Build your own pizza</h4>
+                              <label for="pizzaType">Choose your pizza type</label>
+                              <br />
+                              <select id="pizzaType" name="pizzatype" class="form-control" required>
+                                 <option value="select">select</option>
+                                 <option value="Bbq">Bbq</option>
+                                 <option value="Chicken">Chicken</option>
+                                 <option value="Hawaian">Hawaian</option>
+                                 <option value="Veggie">veggie</option>
+                              </select> <br />
+                           </div>
+                           <div class="form-group">
+                              <label for="pizzaSize">Choose the size of pizza:</label> <br />
+                              <select id="pizzaSize" name="pizzaSize" class="form-control" required>
+                                 <option value="Select">select</option>
+                                 <option value="Small">Small</option>
+                                 <option value="Regular">Regular</option>
+                                 <option value="Large">Large</option>
+                                 <option value="Extra-Large">Extra-Large</option>
+                              </select> <br />
+                           </div>
+                           <div class="form-group">
+                              <label for="toppings">Choose Topping of your choice:</label> <br />
+                              <select id="pizzaToppings" name="pizzaToppings" class="form-control" required>
+                                 <option value="select">select</option>
+                                 <option value="Bacon">Bacon</option>
+                                 <option value="Cheese">Extra cheese</option>
+                                 <option value="Meat">Meat</option>
+                                 <option value="Chicken">Chicken</option>
+                              </select> <br />
+                           </div>
+                           <div class="form-group">
+                              <label for="crust">Choose Crust Weight:</label> <br />
+                              <select id="crustWeight" name="crustWeight" class="form-control" required>
+                                 <option value="select">select</option>
+                                 <option value="Thin">Thin</option>
+                                 <option value="Thick">Thick</option>
+                                 <option value="Double">Double</option>
+                                 <option value="Crispy">Crispy</option>
+                              </select> <br />
+                              <button class="btn btn-primary">Order</button>
+                           </div>
+                        </div>
+                  </div>
+                  </form>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="row">
+                  <div id="container">
+                     <form class="form-control">
+                        <div id="myForm">
+                           <div class="form-group">
+                              <h4 class="delivery">Delivery Checkout-Form</h4>
+                              <label for="name">Your full name:</label> <br />
+                              <input type="text" class="form-control" id="name" required />
+                              <br />
+                              <label for="delivery">Delivery option:</label>
+                              <br />
+                              <select id="delivery-option" name="delivery" class="form-control" required>
+                                 <br />
+                                 <option value="select">select</option>
+                                 <option value="collect">Collect</option>
+                                 <option value="deliver">Deliver</option>
+                                 <br />
+                                 <button class="btn btn-primary">Send</button>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+            </form>
+            <div class="col-md-4">
+               <div class="row">
+                  <div id="container">
+                     <form class="form-control" id="delivery-form">
+                        <div id="myForm">
+                           <div class="form-group">
+                              <h4 class="address">Delivery Point</h4>
+                              <label for="name">Your county:</label> <br />
+                              <input type="text" class="form-control" id="county" required />
+                              <br />
+                              <label for="name">Your Street:</label> <br />
+                              <input type="text" class="form-control" id="street" required />
+                              <br />
+                              <label for="name">Your Mobile Number:</label> <br />
+                              <input type="number" class="form-control" id="number" required />
+                              <br />
+                              <button class="btn btn-primary">Submit</button>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+            </form>
+         </div>
+         <div class="col-md-8 hidden" id="orders">
+            <h3 id="header">Your Pizza placed order(s)</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">pizzaSize</th>
+                        <th scope="col">pizzaToppings</th>
+                        <th scope="col">crustWeight</th>
+                        <th scope="col">pizzaType</th>
+                        <th scope="col"><b>TOTAL</b></th>
+                    </tr>
+                </thead>
+                <tbody id="bill-summary"></tbody>
+            </table>
+            <p class="delivery-cost hidden">
+                Delivery cost: Ksh. <span id="delivery-amount"></span>
+            </p>
+            <p class="total-amount hidden">
+                Total bill: Ksh. <span id="total-amount"></span>
+            </p>
+            <br /><br />
+            <div class="footer">
+                <img src="images/social/behance.png">
+                <img src="images/social/facebook.png">
+                <img src="images/social/flickr.png">
+                <img src="images/social/pinterest.png">
+                <img src="images/social/stumble_upon.png">
+                <img src="images/social/twitter.png">
+                <img src="images/social/you_tube.png">
+                <p>Ruirus pizza delights <br />2020</p>
+            </div>
     </body>
+    </html>

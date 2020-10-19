@@ -99,9 +99,9 @@ $(document).ready(function () {
         return 500;
       } else if (this.pizzaToppings === "Chicken") {
         return 650;
-      } else if (this.pizzaToppings === "Veggie") {
+      } else if (this.pizzaToppings === "Cheese") {
         return 550;
-      } else if (this.pizzaToppings === "Hawaiian") {
+      } else if (this.pizzaToppings === "Meat") {
         return 650;
       } else {
         return 100;
@@ -150,13 +150,13 @@ $(document).ready(function () {
         return 100;
       }
     } else if (this.pizzaSize === "small") {
-      if (this.crustWeight === "Bbq") {
+      if (this.crustWeight === "Thin") {
         return 500;
-      } else if (this.crustWeight === "Chicken") {
+      } else if (this.crustWeight === "Thick") {
         return 650;
-      } else if (this.crustWeight === "Veggie") {
+      } else if (this.crustWeight === "Double") {
         return 550;
-      } else if (this.crustWeight === "Hawaiian") {
+      } else if (this.crustWeight === "Crispy") {
         return 650;
       } else {
         return 100;

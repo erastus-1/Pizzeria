@@ -1,4 +1,4 @@
-***PROJECT NAME**
+**PROJECT NAME**
 
 Ruiru's pizza delights.
 
@@ -24,7 +24,9 @@ Markdown
 
 **Requirements**
 
-i) Git if you are using windows. ii) Download a code editor e.g Vs code, Atom e.t.c.
+i) Git if you are using windows. 
+
+ii) Download a code editor e.g Vs code, Atom e.t.c.
 
 Setup
 Open https://github.com/erastus-1/Pizzeria in your web browser.

@@ -239,28 +239,28 @@ $(document).ready(function () {
 
     $("#bill-summary").append(
       "<tr>" +
-        '<th scope="row">' +
-        newPizza.pizzaType +
-        " -" +
-        newPizza.getPizzaTypePrice() +
-        "</th>" +
-        "<td>" +
-        newPizza.pizzaToppings +
-        " - " +
-        newPizza.getPizzaToppingsPrice() +
-        "</td>" +
-        "<td>" +
-        newPizza.crustWeight +
-        " - " +
-        newPizza.getPizzaCrustWeightprice() +
-        "</td>" +
-        "<td>" +
-        newPizza.pizzaSize +
-        "</td>" +
-        "<td>" +
-        newPizza.getPizzaPrice() +
-        "</td>" +
-        "</tr>"
+      '<th scope="row">' +
+      newPizza.pizzaType +
+      " -" +
+      newPizza.getPizzaTypePrice() +
+      "</th>" +
+      "<td>" +
+      newPizza.pizzaToppings +
+      " - " +
+      newPizza.getPizzaToppingsPrice() +
+      "</td>" +
+      "<td>" +
+      newPizza.crustWeight +
+      " - " +
+      newPizza.getPizzaCrustWeightprice() +
+      "</td>" +
+      "<td>" +
+      newPizza.pizzaSize +
+      "</td>" +
+      "<td>" +
+      newPizza.getPizzaPrice() +
+      "</td>" +
+      "</tr>"
     );
     if (pizzasOrdered.length > 0) {
       $("#form-control").append();
@@ -305,12 +305,12 @@ $(document).ready(function () {
       totalCost += 200;
       $("#total-amount").empty();
       $("#total-amount").append(totalCost);
-    } else { 
+    } else {
       alert(
         customerName +
-          ": Your total bill is Ksh. " +
-          totalCost +
-          ". Your order will be ready for your collection in the next 30mins"
+        ": Your total bill is Ksh. " +
+        totalCost +
+        ". Your order will be ready for your collection in the next 30mins"
       );
     }
     $("#delivery-form").submit(function (event) {
@@ -324,14 +324,14 @@ $(document).ready(function () {
       $(".street").hide();
       alert(
         customerName +
-          ": Your total bill is Ksh. " +
-          totalCost +
-          ". Your order will be delivered to " +
-          street +
-          ", " +
-          contactNumber +
-          " in the next 30mins"
+        ": Your total bill is Ksh. " +
+        totalCost +
+        ". Your order will be delivered to " +
+        street +
+        ", " +
+        contactNumber +
+        " in the next 30mins"
       );
     });
   });
-  });
+});

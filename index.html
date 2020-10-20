@@ -54,23 +54,21 @@
             </div>
          </div>
       </div>
-      <h2>Place Your Order Here:</h2>
-      <img src="images/thankyou.jpeg" alt="delivery image" id="thankyou">
-      <div class="form">
-         <div id="row">
-            <div class="col-md-8">
-               <h4 class="menu">Build Your Menu:</h4>
-               <form id="myForm">
+      <h2 class="head">Place Your Order Here:</h2>
+      <div id="container-fluid">
+         <form class="form-control" class="form-group" id="myForm" method="post">
+            <h4 class="menu">Build Your Menu:</h4>
+            <div id="row" class="row">
+               <div class="col-sm-4">
                   <div class="form-group">
-                     <label for="pizzaType">Choose your pizza type:</label> </br>
+                     <label for="pizzaType">Choose your pizza:</label> </br>
                      <select id="pizzaType" name="pizzatype" class="form-control" required>
                         <option value="select">select</option>
                         <option value="Bbq">Bbq</option>
                         <option value="Chicken">Chicken</option>
                         <option value="Hawaian">Hawaian</option>
                         <option value="Veggie">veggie</option>
-                     </select>
-                  </div>
+                     </select> </div>
                   <div class="form-group">
                      <label for="pizzaSize">Choose the size of pizza:</label> <br />
                      <select id="pizzaSize" name="pizzaSize" class="form-control" required>
@@ -79,8 +77,7 @@
                         <option value="Regular">Regular</option>
                         <option value="Large">Large</option>
                         <option value="Extra-Large">Extra-Large</option>
-                     </select>
-                  </div>
+                     </select> </div>
                   <div class="form-group">
                      <label for="toppings">Choose Topping of your choice:</label> <br />
                      <select id="pizzaToppings" name="pizzaToppings" class="form-control" required>
@@ -89,8 +86,7 @@
                         <option value="Cheese">Extra cheese</option>
                         <option value="Meat">Meat</option>
                         <option value="Chicken">Chicken</option>
-                     </select>
-                  </div>
+                     </select> </div>
                   <div class="form-group">
                      <label for="crust">Choose Crust Weight:</label> <br />
                      <select id="crustWeight" name="crustWeight" class="form-control" required>
@@ -99,48 +95,53 @@
                         <option value="Thick">Thick</option>
                         <option value="Double">Double</option>
                         <option value="Crispy">Crispy</option>
-                     </select>
-                  </div>
+                     </select> </div>
                   <button class="btn btn-primary">Order</button>
-               </form>
-            </div>
-            <div class="col-md-8 checkout-options hidden">
-               <form id="checkout-form">
-                  <h4 class="delivery">Delivery Checkout-Form</h4>
-                  <div class="form-group">
-                     <label for="name">Your full name:</label> <br />
-                     <input type="text" class="form-control" id="name" required />
-                  </div>
-                  <div class="form-group">
-                     <label for="delivery">Delivery option:</label>
-                     <br />
-                     <select id="delivery-option" name="delivery" class="form-control" required>
+               </div>
+         </form>
+         <div class="col-sm-4 checkout-options hidden">
+            <div class="container">
+               <div class="row">
+                  <form id="checkout-form">
+                     <h4 class="delivery">Delivery Checkout-Form</h4>
+                     <div class="form-group">
+                        <label for="name">Your full name:</label> <br />
+                        <input type="text" class="form-control" id="name" required />
+                     </div>
+                     <div class="form-group">
+                        <label for="delivery">Delivery option:</label>
                         <br />
-                        <option value="select">select</option>
-                        <option value="collect">Collect</option>
-                        <option value="deliver">Deliver</option>
-                  </div>
-                  <button class="btn btn-primary">Send</button>
-               </form>
+                        <select id="delivery-option" name="delivery" class="form-control" required>
+                           <br />
+                           <option value="select">select</option>
+                           <option value="collect">Collect</option>
+                           <option value="deliver">Deliver</option>
+                        </select> </div>
+                     <button class="btn btn-primary">Send</button>
+                  </form>
+               </div>
             </div>
-            <div class="col-md-8">
-               <h4 class="address">Delivery Point:</h4>
-               <form id="delivery-form">
-                  <div class="form-group">
-                     <label for="name">Your county:</label> <br />
-                     <input type="text" class="form-control" id="county" required />
-                  </div>
-                  <div class="form-group">
-                     <label for="name">Your Street:</label> <br />
-                     <input type="text" class="form-control" id="street" required />
-                  </div>
-                  <div class="form-group">
-                     <label for="name">Your Mobile Number:</label> <br />
-                     <input type="number" class="form-control" id="number" required />
-                  </div>
-                  <button class="btn btn-primary">Submit</button>
-               </form>
-            </div>
+         </div>
+         <div class="col-sm-4">
+            <div class="container">
+               <div class="row">
+                  <form id="delivery-form">
+                     <h4 class="address">Delivery Point:</h4>
+                     <div class="form-group">
+                        <label for="name">Your county:</label> <br />
+                        <input type="text" class="form-control" id="county" required />
+                     </div>
+                     <div class="form-group">
+                        <label for="name">Your Street:</label> <br />
+                        <input type="text" class="form-control" id="street" required />
+                     </div>
+                     <div class="form-group">
+                        <label for="name">Your Mobile Number:</label> <br />
+                        <input type="number" class="form-control" id="number" required />
+                     </div>
+                     <button class="btn btn-primary">Submit</button>
+                  </form>
+               </div>
             </div>
          </div>
          <div class="col-md-8 hidden" id="orders">
@@ -165,23 +166,17 @@
             Total bill: Ksh. <span id="total-amount"></span>
          </p>
          <br /><br />
-        <footer style="text-align: center;" id="footer">
-         <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-            <img src="images/social/behance.png">
-            <img src="images/social/facebook.png">
-            <img src="images/social/flickr.png">
-            <img src="images/social/pinterest.png">
-            <img src="images/social/stumble_upon.png">
-            <img src="images/social/twitter.png">
-            <img src="images/social/you_tube.png">
-            <p>Ruirus pizza delights <br />2020</p>
-         </div>
-      </div>
-      </div>
-   </div>
-   </footer>
+         <footer style="text-align: center;" id="footer">
+                     <img src="images/social/behance.png">
+                     <img src="images/social/facebook.png">
+                     <img src="images/social/flickr.png">
+                     <img src="images/social/pinterest.png">
+                     <img src="images/social/stumble_upon.png">
+                     <img src="images/social/twitter.png">
+                     <img src="images/social/you_tube.png">
+                     <p>Ruirus pizza delights <br />2020</p>
+                  </div>
+      </footer>
    </body>
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

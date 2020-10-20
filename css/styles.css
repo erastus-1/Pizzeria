@@ -107,4 +107,6 @@ h2 {
 .total-amount {
                 font-weight: bold
 }
-   
+body           {
+                   background-color: slategrey;
+}

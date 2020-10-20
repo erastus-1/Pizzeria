@@ -280,6 +280,55 @@ $(document).ready(function () {
     $(".checkout-options").show();
   });
 
+  $("#delivery-form").submit(function (event) {
+    event.preventDefault();
+    var streetEntered = $("#street").val();
+    var countyEntered = $("#county").val();
+    var contactNumberEntered = $("#number").val();
+    street = streetEntered;
+    county = countyEntered;
+    contactNumber = contactNumberEntered;
+    $("#Street").hide();
+    $("#number").hide();
+    $("#county").hide();
+    alert(
+      customerName +
+      ": Your total bill is Ksh. " +
+      totalCost +
+      ". Your order will be delivered to " +
+      street +
+      ", " +
+      contactNumber +
+      " in the next 30mins"
+    );
+  });
+  $(document).ready(function () {
+    $(".img1").mouseover(function () {
+       $(".item1").show();
+    });
+    $(".img1").mouseout(function () {
+       $(".item1").hide();
+    });
+    $(".img2").mouseover(function () {
+       $(".item2").show();
+    });
+    $(".img2").mouseout(function () {
+       $(".item2").hide();
+    });
+    $(".img3").mouseover(function () {
+       $(".item3").show();
+    });
+    $(".img3").mouseout(function () {
+       $(".item3").hide();
+    });
+    $(".img4").mouseover(function () {
+       $(".item4").show();
+    });
+    $(".img4").mouseout(function () {
+       $(".item4").hide();
+    });
+
+
   // $("#checkout-form").submit(function (event) {
   //   event.preventDefault();
   //   var name = $("#name").val();
@@ -313,27 +362,7 @@ $(document).ready(function () {
         ". Your order will be ready for your collection in the next 30mins"
       );
     }
-    $("#delivery-form").submit(function (event) {
-      event.preventDefault();
-      var streetEntered = $("#street").val();
-      var countyEntered = $("#county").val();
-      var contactNumberEntered = $("#number").val();
-      street = streetEntered;
-      county = countyEntered;
-      contactNumber = contactNumberEntered;
-      $("#Street").hide();
-      $("#number").hide();
-      $("#county").hide();
-      alert(
-        customerName +
-        ": Your total bill is Ksh. " +
-        totalCost +
-        ". Your order will be delivered to " +
-        street +
-        ", " +
-        contactNumber +
-        " in the next 30mins"
-      );
-    });
   });
 });
+});
+

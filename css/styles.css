@@ -84,11 +84,6 @@ h2 {
          text-align: center;
          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-.form {
-        background-color: burlywood;
-        display: transparent;
-        padding: 20px;
-}
 #footer {
           text-align: center;
           padding-top: 20px;
@@ -107,6 +102,13 @@ h2 {
 .total-amount {
                 font-weight: bold
 }
-body           {
-                   background-color: slategrey;
+.delivery, .address, .menu {
+                             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                             font-weight: bold;
+}
+body {
+       background-color: burlywood;
+}
+#container-fluid {
+                   background-color: burlywood;
 }

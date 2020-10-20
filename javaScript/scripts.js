@@ -94,7 +94,7 @@ $(document).ready(function () {
       } else if (this.pizzaToppings === "Meat") {
         return 50;
       }
-    } else if (this.pizzaSize === "small") {
+    } else if (this.pizzaSize === "Small") {
       if (this.pizzaToppings === "Bacon") {
         return 500;
       } else if (this.pizzaToppings === "Chicken") {
@@ -149,7 +149,7 @@ $(document).ready(function () {
       } else if (this.crustWeight === "Crispy") {
         return 100;
       }
-    } else if (this.pizzaSize === "small") {
+    } else if (this.pizzaSize === "Small") {
       if (this.crustWeight === "Thin") {
         return 500;
       } else if (this.crustWeight === "Thick") {
@@ -181,7 +181,7 @@ $(document).ready(function () {
       } else if (this.crustWeight === "Crispy") {
         return 100;
       }
-    } else if (this.pizzaSize === "Extra.Large") {
+    } else if (this.pizzaSize === "Extra-Large") {
       if (this.crustWeight === "Thin") {
         return 50;
       } else if (this.crustWeight === "Thick") {

@@ -62,14 +62,18 @@ body {
 .footer {
          text-align: center;
          padding-top: 20px;
+         background-color: gray;
     }
     
 .table {
     padding: 30px;
     margin: 30px;
+    padding-left: 10px;
+    border-width: 0ch;
     }
  #header {
            margin-top: 20px;
+           font-weight: bold;
          }
 .form-group {
             overflow: hidden;
@@ -87,6 +91,7 @@ h2 {
 }
 #footer {
           text-align: center;
+          background-color: gray;
 }
 #thankyou {
             float: right;
@@ -95,5 +100,11 @@ h2 {
             padding-right: 20px;
             padding-top: 150px;
             padding-left: 10px;
+}
+.delivery-cost {
+                 font-weight: bold;
+}
+.total-amount {
+                font-weight: bold
 }
     

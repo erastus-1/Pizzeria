@@ -288,9 +288,7 @@ $(document).ready(function () {
     street = streetEntered;
     county = countyEntered;
     contactNumber = contactNumberEntered;
-    $("#Street").hide();
-    $("#number").hide();
-    $("#county").hide();
+  
     alert(
       customerName +
       ": Your total bill is Ksh. " +
